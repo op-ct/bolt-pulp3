@@ -4,22 +4,42 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+
+<!--
 ## [Unreleased]
 
 ### Added
 
-- Container volume support
-- New plan `pulp3::in_one_container::get_logs`, to fetch and review django logs
-  from inside the running Pulp container
-- Created `CHANGELOG.md` for project
-- Updated RPMs in `build/**/*.yaml` files
+### Changed
+
+### Fixed
+
+### Removed
+-->
+
+## [0.4.0] - 2021-10-21
+
+### Added
+
+- Support for:
+  - `modulemd` content units (resolves modules, generates `modules.yaml`)
+  - Package group content units (resolves groups, generates `comps.xml`)
+  - Container volumes (no more local directory mounts)
+- New plan `pulp3::in_one_container::get_logs`
+  - Fetch and review django logs from inside the running Pulp container
+- New `CHANGELOG.md` file for project
+- Provisional helper scripts
 
 ### Changed
 
+- Updated RPMs in `build/**/*.yaml` files
+- Bumped default Pulp-in-one-container image to `docker.io/pulp/pulp:3.15`
 - Cleaned up root directory, gem deps, Bolt project
-- Internal code simplifications
+- Simplified plans' internal code
 
 ### Removed
+
+- Local mount directories for Pulp-in-one-container
 - (Incomplete) never-used plans `::rpm::mirror` and `::rpm::repo`
 
 ### Fixed
@@ -49,4 +69,5 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 [0.1.0]: https://github.com/op-ct/puppetsync/releases/tag/0.1.0
 [0.2.0]: https://github.com/op-ct/puppetsync/compare/0.1.0...0.2.0
 [0.3.0]: https://github.com/op-ct/puppetsync/compare/0.2.0...0.3.0
-[Unreleased]: https://github.com/op-ct/puppetsync/compare/0.3.0...HEAD
+[0.4.0]: https://github.com/op-ct/puppetsync/compare/0.3.0...0.4.0
+[Unreleased]: https://github.com/op-ct/puppetsync/compare/0.4.0...HEAD

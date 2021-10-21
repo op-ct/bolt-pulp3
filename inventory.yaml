@@ -1,0 +1,8 @@
+---
+config:
+  transport: local
+  local:
+    tmpdir:
+     _plugin: env_var
+     var: PWD
+

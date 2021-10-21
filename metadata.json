@@ -1,0 +1,83 @@
+{
+  "name": "simp-pulp3",
+  "version": "0.4.0",
+  "author": "Chris Tessmer",
+  "summary": "Bolt plans and Ruby scripts to manage a local Pulp-in-one-container and create depsolved \"slim\" local repository mirrors for a SIMP CE super-release",
+  "license": "Apache-2.0",
+  "source": "https://github.com/simp/bolt-pulp3",
+  "project_page": "https://github.com/simp/bolt-pulp3",
+  "issues_url": "https://github.com/simp/bolt-pulp3/issues",
+  "dependencies": [
+    {
+      "name": "puppetlabs/ruby_task_helper",
+      "version_requirement": "0.x"
+    }
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "OracleLinux",
+      "operatingsystemrelease": [
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "8"
+      ]
+    },
+    {
+      "operatingsystem": "Scientific",
+      "operatingsystemrelease": [
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "Debian",
+      "operatingsystemrelease": [
+        "9"
+      ]
+    },
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [
+        "18.04"
+      ]
+    },
+    {
+      "operatingsystem": "windows",
+      "operatingsystemrelease": [
+        "2019",
+        "10"
+      ]
+    },
+    {
+      "operatingsystem": "Fedora",
+      "operatingsystemrelease": [
+        "29"
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "name": "puppet",
+      "version_requirement": ">= 6.18.0 < 8.0.0"
+    }
+  ],
+  "tags": [
+    "simp",
+    "bolt",
+    "pulp3",
+    "modularity",
+    "repository"
+  ],
+  "pdk-version": "2.0.0",
+  "template-url": "https://github.com/puppetlabs/pdk-templates#2.0.0",
+  "template-ref": "tags/2.0.0-0-ge838f1d"
+}
